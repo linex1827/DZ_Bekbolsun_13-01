@@ -5,6 +5,7 @@ console.log("Hello" + " " + name)
 const arr = [1,2,3,4,5];
 const arr2 = [1,2,3,4,5];
 
+
 console.log(arr==arr2);
 console.log(JSON.stringify(arr)==JSON.stringify(arr2));
 
