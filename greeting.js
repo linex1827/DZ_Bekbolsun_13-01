@@ -1,25 +1,20 @@
-const name = prompt("Как вас зовут?")
-console.log("Hello" + " " + name)
+const obj = {
+    key1: '*',
+    key2: '**',
+    key3: '***',
+    key4: '****',
+    key5: '*****',
+    key6: '******',
+    key7: '*******',
+}
 
-const arr = [1,2,3,4,5];
-const arr2 = [1,2,3,4,5];
+for(let key in obj){
+    console.log(obj[key])
+}
 
-console.log(arr==arr2);
-console.log(JSON.stringify(arr)==JSON.stringify(arr2));
-
-const colour = prompt ('Выберите цвет: red, yellow, green!');
-
-switch (colour) {
-    case 'red':
-        alert('стой')
-        break;
-    case 'yellow':
-        alert('подожди')
-        break;
-    case 'green':
-        alert('иди')
-    break;
-    default:
-        alert('undefined')
-        break;
+for (let i = 1; i < 101; i++) {
+    if (i % 15 == 0) console.log("FizzBuzz");
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
 }
