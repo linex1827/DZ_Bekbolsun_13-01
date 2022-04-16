@@ -7,5 +7,6 @@ block3.classList.add("changedClass")
 console.log(block3.classList)
 
 
+
 block3.classList.remove("newClass")
 console.log(block3.classList)
